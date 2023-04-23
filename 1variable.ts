@@ -15,3 +15,8 @@ console.log(s2);
 var sn: string | number;
 sn = "Shivam";
 sn = 10;
+
+
+
+
+let dice:number;

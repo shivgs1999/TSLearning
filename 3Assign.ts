@@ -16,51 +16,37 @@ class Employee {
 }
 
 var shiv = new Employee ("Shivam", 101, "ETA", "07/july/2022", true);
-console.error(`1. ~~~~~~~~~~~~~~ Object with All Arguments ~~~~~~~~~~~~~~ `);
+console.log(`1. ~~~~~~~~~~~~~~ Object with All Arguments ~~~~~~~~~~~~~~ `);
 console.log(`~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`);
 
-console.log(`Employee Name: ${shiv.empName}`);
-console.log(`Employee ID: ${shiv.empId}`);
-console.log(`Employee Department: ${shiv.empDept}`);
-console.log(`Employee DOJ: ${shiv.empDOJ}`);
-console.log(`is Transport Available: ${shiv.isTransportAvail}`);
+console.log(`Employee Name: ${shiv.empName}, Employee ID: ${shiv.empId}, Employee Department: ${shiv.empDept}, Employee DOJ: ${shiv.empDOJ},  "is Transport Available: ${shiv.isTransportAvail}" <--- Optional Property`);
+
+// console.log(`Employee Name: ${shiv.empName}`);
+// console.log(`Employee ID: ${shiv.empId}`);
+// console.log(`Employee Department: ${shiv.empDept}`);
+// console.log(`Employee DOJ: ${shiv.empDOJ}`);
+// console.log(`is Transport Available: ${shiv.isTransportAvail}  <--- Optional Property`);
+
 
 
 var sachin = new Employee ("Sachin" , 102, "HR", "01/Jan/2022" )
-console.error(`2. ~~~~~~~~~~~~~~ Object with Except Optional property ~~~~~~~~~~~~~~ `);
+console.log(`2. ~~~~~~~~~~~~~~ Object with Except Optional property ~~~~~~~~~~~~~~ `);
 console.log(`~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`);
 
-console.log(`Employee Name: ${sachin.empName}`);
-console.log(`Employee ID: ${sachin.empId}`);
-console.log(`Employee Department: ${sachin.empDept}`);
-console.log(`Employee DOJ: ${sachin.empDOJ}`);
-// console.log(`is Transport Available: ${sachin.isTransportAvail}`);
-if (sachin.isTransportAvail != undefined) {
-    console.log(`is Transport Available: ${sachin.isTransportAvail}`);
+console.log(`Employee Name: ${sachin.empName}, Employee ID: ${sachin.empId}, Employee Department: ${sachin.empDept}, Employee Department: ${sachin.empDept}, Employee DOJ: ${sachin.empDOJ} }`);
+if (typeof sachin.isTransportAvail != undefined) {
+    console.log(`is Transport Available: ${sachin.isTransportAvail}`); 
 }
+// console.log(`Employee Name: ${sachin.empName}`);
+// console.log(`Employee ID: ${sachin.empId}`);
+// console.log(`Employee Department: ${sachin.empDept}`);
+// console.log(`Employee DOJ: ${sachin.empDOJ}`);
+// // console.log(`is Transport Available: ${sachin.isTransportAvail}`);
+// if (sachin.isTransportAvail != undefined) {
+//     console.log(`is Transport Available: ${sachin.isTransportAvail}`);
+// }
 
-console.log(`3.  ~~~~~~~~~~~~~ import {isPalindrome} from "./3AssignExport" ~~~~~~~~~~~~~~`);
-console.log(`3.  ~~~~~~~~~~~~~ Checking String and numbers are Palindrome or not ~~~~~~~~~~~~~~`);
-console.log(`~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`);
 
-
-import {isPalindrome} from "./3AssignExport";
-
-// Usage example:
-console.log(`is Number Palindrome? --> "12321"`);
-console.log(isPalindrome(12321)); // true
-
-console.log(`is String Palindrome? --> "rasar"`);
-console.log(isPalindrome("rasar")); // true
-
-console.log(`is String Palindrome? --> "DAD"`);
-console.log(isPalindrome("DAD"));   // true
-
-console.log(`is Number Palindrome? --> "123"`);
-console.log(isPalindrome(123));   // false
-
-console.log(`is String Palindrome? --> "SHIVAM"`);
-console.log(isPalindrome("SHIVAM"));  // false
 
 
 console.log(`4.  ~~~~~~~~~~~~~ Create method findEmployees and make it overloading  ~~~~~~~~~~~~~~`);
@@ -93,4 +79,26 @@ var result3 = findEmployee(true, "Virat");
 console.log(result3);
 
 
+console.log(`3.  ~~~~~~~~~~~~~ import {isPalindrome} from "./3AssignExport" ~~~~~~~~~~~~~~`);
+console.log(`3.  ~~~~~~~~~~~~~ Checking String and numbers are Palindrome or not ~~~~~~~~~~~~~~`);
+console.log(`~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`);
+
+
+import {isPalindrome} from "./3AssignExport";
+
+// Usage example:
+console.log(`is Number Palindrome? --> "12321"`);
+console.log(isPalindrome(12321)); // true
+
+console.log(`is String Palindrome? --> "rasar"`);
+console.log(isPalindrome("rasar")); // true
+
+console.log(`is String Palindrome? --> "DAD"`);
+console.log(isPalindrome("DAD"));   // true
+
+console.log(`is Number Palindrome? --> "123"`);
+console.log(isPalindrome(123));   // false
+
+console.log(`is String Palindrome? --> "SHIVAM"`);
+console.log(isPalindrome("SHIVAM"));  // false
 
