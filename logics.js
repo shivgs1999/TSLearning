@@ -74,3 +74,24 @@ var result2 = check_palindrome(string2);
 console.log(result2);
 var result3 = check_palindrome(string3);
 console.log(result3);
+console.log("~~~~~~~~~~~~ Reverse the String ~~~~~~~~~~~~~~");
+function reversee(str) {
+    var reverse = " ";
+    for (var index = str.length; index >= 1; index--) {
+        var charAt = str.charAt(index);
+        reverse = reverse + charAt;
+    }
+    return reverse;
+}
+var output = reversee("Shivam");
+console.log(output);
+var reverseString = function (str) {
+    var reverse = ""; // wo
+    for (var index = str.length - 1; index >= 0; index--) {
+        var charAt = str.charAt(index);
+        reverse = reverse + charAt; // "w"+"o" ==> "wo"
+    }
+    return reverse;
+};
+var output1 = reverseString("Do it anyhow");
+console.log("Reverse String is: ".concat(output1));

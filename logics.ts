@@ -90,3 +90,31 @@ console.log(result2);
 
 let result3: string = check_palindrome(string3);
 console.log(result3);
+
+
+console.log(`~~~~~~~~~~~~ Reverse the String ~~~~~~~~~~~~~~`);
+function reversee(str:string) {
+    let reverse = " ";
+    for (let index = str.length; index >= 1; index--) {
+     let charAt = str.charAt(index);  
+        reverse = reverse + charAt;
+    }
+    return reverse;
+}
+let output:string = reversee("Shivam");
+console.log(output);
+
+
+var reverseString = function(str){
+    var reverse = ""; // wo
+    for (let index = str.length-1 ; index >= 0; index--) {  
+       var charAt = str.charAt(index);
+       reverse = reverse + charAt; // "w"+"o" ==> "wo"
+    }
+    return reverse;
+}
+var output1 = reverseString("Do it anyhow"); 
+console.log(`Reverse String is: ${output1}`);
+
+
+
